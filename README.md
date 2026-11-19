@@ -2,6 +2,8 @@
 
 A small Arduino night light that your team builds together while practicing Git and GitHub in VS Code.
 
+**Start here:** read [INSTRUCTIONS.md](INSTRUCTIONS.md) for what to do and when, and [TASKS.md](TASKS.md) for what each person builds.
+
 **What it does**
 
 - Press the button to switch between three modes: OFF, AUTO, ON.
@@ -31,8 +33,10 @@ A small Arduino night light that your team builds together while practicing Git 
 ```text
 root/
 ├── .gitignore               # Git files and folders to ignore
-├── .gitattributes           # 
+├── .gitattributes           # Special instructions for Git
 ├── README.md                # Project overview (this file)
+	├── INSTRUCTIONS.md          # What to do and when
+	├── TASKS.md                 # What each person builds
 └── NightLight/
 	├── NightLight.ino       # Main sketch file: setup, loop, and the three modes
 	├── config.h             # Pins and settings shared by every file
