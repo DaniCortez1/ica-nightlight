@@ -31,6 +31,7 @@ A small Arduino night light that your team builds together while practicing Git 
 ```text
 root/
 ├── .gitignore               # Git files and folders to ignore
+├── .gitattributes           # 
 ├── README.md                # Project overview (this file)
 └── NightLight/
 	├── NightLight.ino       # Main sketch file: setup, loop, and the three modes

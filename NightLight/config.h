@@ -16,16 +16,16 @@
 enum Mode { MODE_OFF, MODE_AUTO, MODE_ON };
 
 // ---------- Light sensor settings (Task 1, Developer A) ----------
-// TODO Task 1: add SENSOR_SAMPLES here
+// TODO Task 1: add any settings you need here (for example SENSOR_SAMPLES)
 
 // ---------- LED settings (Task 2, Developer B) ----------
-// TODO Task 2: add FADE_STEP here
+// TODO Task 2: add any settings you need here (for example FADE_STEP)
 
 // ---------- Button settings (Task 3, Developer C) ----------
-// TODO Task 3: add BUTTON_DEBOUNCE_MS here
+// TODO Task 3: add any settings you need here (for example BUTTON_DEBOUNCE_MS)
 
 // ---------- Logger settings (Task 4, Project Manager) ----------
-// TODO Task 4: add LOG_INTERVAL_MS here
+// TODO Task 4: add any settings you need here (for example LOG_INTERVAL_MS)
 
 // ---------- Night light behavior (shared by everyone) ----------
 #define DARK_THRESHOLD    500   // light readings below this mean "dark"
