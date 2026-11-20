@@ -8,27 +8,27 @@ This file tells you what to do and when. [TASKS.md](TASKS.md) describes what eac
 
 By the end your team will have a NightLight sketch edited by every teammate, eight merged pull requests and one merge conflict that you resolved yourselves.
 
-| Role | Job |
-| --- | --- |
-| Project Manager (PM) | Forks the template, invites teammates, reviews and merges pull requests on GitHub. Also does Tasks 4 and 8. |
-| Developer A (Sensor) | Tasks 1 and 5 |
-| Developer B (LED) | Tasks 2 and 6 |
-| Developer C (Button) | Tasks 3 and 7 |
+- **Project Manager (PM)**: Forks the template, invites teammates, reviews and merges pull requests on GitHub. Also does Tasks 4 and 8.
+- **Developer A**: (Sensor) Tasks 1 and 5
+- **Developer B**: (LED) Tasks 2 and 6
+- **Developer C**: (Button) Tasks 3 and 7
 
 Teams of 3 have no Developer C: Developer B also takes Tasks 3 and 7, each on its own branch.
 
-| Time | What happens |
-| --- | --- |
-| 0:00–0:10 | Lecture: Git, GitHub and VS Code |
-| 0:10–0:25 | Activity 1: Fork, invite, clone |
-| 0:25–0:40 | Activity 2: Commit and pull relay |
-| 0:40–0:47 | Lecture: branches and pull requests |
-| 0:47–1:10 | Activity 3: Round 1 branches and pull requests |
-| 1:10–1:15 | Break |
-| 1:15–1:23 | Activity 4: Review, merge and pull |
-| 1:23–1:28 | Lecture: merge conflicts |
-| 1:28–1:55 | Activity 5: Round 2 and a conflict |
-| 1:55–2:00 | Wrap-up |
+### Outline
+
+| | |
+|---|---|
+| **Lecture** | Intro to Git |
+| Activity 1 | Fork, invite, clone |
+| Activity 2 | Commit and pull relay |
+| **Lecture** | branches and pull requests |
+| Activity | Round 1 branches and pull requests |
+| _Break_ |
+| Activity 4 | Review, merge and pull |
+| **Lecture** | Handling merge conflicts |
+| Activity 5 | Round 2 and a conflict |
+| Wrap-up |
 
 Three team rules:
 
@@ -36,7 +36,7 @@ Three team rules:
 2. After Activity 2, never commit to `main` directly. Work on your own branch.
 3. Only the PM merges pull requests.
 
-## Activity 1: Fork, invite, clone (15 min)
+## Activity 1: Fork, invite, clone
 
 Goal: every teammate has the team's repository open in VS Code.
 
@@ -60,7 +60,7 @@ Goal: every teammate has the team's repository open in VS Code.
 
 **Check:** the Explorer on the left shows `README.md`, `INSTRUCTIONS.md`, `TASKS.md` and a `NightLight` folder, and the bottom-left corner of VS Code shows `main`.
 
-## Activity 2: Commit and pull relay (15 min)
+## Activity 2: Commit and pull relay
 
 Goal: practice commit, push and pull on `main`. Go one at a time in this order: PM, Developer A, Developer B, Developer C. Each person adds their name to the README, then tells the next person "pushed". While you wait, open `NightLight/NightLight.ino` and read how the program is organized.
 
@@ -77,7 +77,7 @@ Goal: practice commit, push and pull on `main`. Go one at a time in this order: 
 
 Pulling before you edit is the habit that prevents most Git trouble. If you edit first and someone else pushed meanwhile, Sync may fail. See the troubleshooting table at the end of this file.
 
-## Activity 3: Round 1, your own branch and pull request (23 min)
+## Activity 3: Round 1, your own branch and pull request
 
 Goal: each of you changes your own files on your own branch, then asks the PM to merge the work with a pull request. Everyone works at the same time. Your task is in [TASKS.md](TASKS.md), under **Round 1**.
 
@@ -93,7 +93,7 @@ Goal: each of you changes your own files on your own branch, then asks the PM to
 
 Teams of 3: Developer B publishes Task 2, then clicks the branch name in the bottom-left corner, switches back to `main`, and repeats steps 2 to 8 for Task 3.
 
-## Activity 4: Review, merge and pull (8 min)
+## Activity 4: Review, merge and pull
 
 Goal: the PM merges the four pull requests, then everyone pulls the combined code.
 
@@ -113,23 +113,23 @@ Goal: the PM merges the four pull requests, then everyone pulls the combined cod
 
 **Check:** on github.com, click **Commits** on the repository's main page. You see four merged pull requests.
 
-## Activity 5: Round 2 and a merge conflict (27 min)
+## Activity 5: Round 2 and a merge conflict
 
 Goal: build the finished features, and resolve the conflict that happens when two teammates change the same line. Tasks 5 and 6 are required. Tasks 7 and 8 are extra if time is short. Your tasks are in [TASKS.md](TASKS.md), under **Round 2**.
 
-**Part A: your branch and pull request (12 min)**
+**Part A: your branch and pull request**
 
 1. Confirm you are on `main` with the latest code (Activity 4, steps 1 and 2).
 2. Repeat Activity 3, steps 2 to 8, using your Round 2 task. Developers B and C: your tasks edit files that a teammate wrote in Round 1.
 
-**Part B: the PM merges, in this order (5 min)**
+**Part B: the PM merges, in this order**
 
 1. Merge Task 5, then Task 8, then Task 7.
 2. Open Task 6. GitHub says **This branch has conflicts that must be resolved**. Do not merge it. Tell Developer B.
 
 The conflict is on purpose: Developer A's Task 5 and Developer B's Task 6 each changed the number on the same `DARK_THRESHOLD` line. Git cannot choose, so a human must.
 
-**Part C: Developer B resolves the conflict in VS Code (8 min)**
+**Part C: Developer B resolves the conflict in VS Code**
 
 1. Check that the bottom-left corner shows `task6-banner`.
 2. In Source Control, click `...` then **Fetch**. Then click `...`, choose **Branch**, then **Merge Branch...**, and pick `origin/main`.
@@ -141,7 +141,7 @@ The conflict is on purpose: Developer A's Task 5 and Developer B's Task 6 each c
 
 Everyone else: pull `main` and read the merged code while you wait.
 
-**Part D: finish (2 min)**
+**Part D: finish**
 
 1. The PM merges Task 6.
 2. Everyone switches to `main` and pulls. Open `config.h` and confirm `DARK_THRESHOLD` is 350.

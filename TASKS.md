@@ -2,7 +2,7 @@
 
 Each task gives a goal, where to work and some hints, not the code. Write your own solution. Keep it inside the file and function named in your task, so that your edits and your teammates' edits do not overlap. The `TODO` comment with your task number marks where to work, and you can delete it when you are done. Your code does not need to match anyone else's. It only needs to do the job described.
 
-If you have the Arduino IDE, **Verify** checks that your sketch compiles. You do not need a board.
+Make sure your code compiles successfully before committing your code.
 
 For when and how to commit, publish and open pull requests, see [INSTRUCTIONS.md](INSTRUCTIONS.md).
 
