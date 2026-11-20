@@ -12,13 +12,13 @@ A small Arduino night light that your team builds together while practicing Git 
 
 ## Team
 
-**Project Manager:** _(your name)_
+**Project Manager:** Your Name (your GitHub username)
 
-**Developer A (Sensor):** _(your name)_
+**Developer A (Sensor):** Your Name (your GitHub username)
 
-**Developer B (LED):** _(your name)_
+**Developer B (LED):** Your Name (your GitHub username)
 
-**Developer C (Button):** _(your name)_
+**Developer C (Button):** Your Name (your GitHub username)
 
 ## Wiring
 

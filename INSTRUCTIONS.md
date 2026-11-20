@@ -21,8 +21,8 @@ By the end your team will have a NightLight sketch edited by every teammate, eig
 | Activity 1 | Fork, invite, clone |
 | Activity 2 | Commit and pull relay |
 | **Lecture** | branches and pull requests |
-| Activity | Round 1 branches and pull requests |
-| _Break_ |
+| Activity 3 | Round 1 branches and pull requests |
+|  | _Break_ |
 | Activity 4 | Review, merge and pull |
 | **Lecture** | Handling merge conflicts |
 | Activity 5 | Round 2 and a conflict |
@@ -64,7 +64,7 @@ Goal: practice commit, push and pull on `main`. Go one at a time in this order: 
 **On your turn**
 
 1. **Pull first.** Click the Source Control icon on the left (or press `Ctrl+Shift+G`), click the `...` menu, then **Pull**. The PM goes first and has nothing to pull.
-2. Open `README.md`. Under **Team**, replace `_(your name)_` on your own role line with your name. Press `Ctrl+S` to save.
+2. Open `README.md`. Under **Team**, replace `Your Name (your GitHub username)` on your own role line with your information. For example, "Matt Ford (dashdotrobot)".
 3. In Source Control, your file appears under **Changes**. Click it to see the green and red difference, then click the `+` beside it to **stage** it.
 4. Type a message such as `Add Matt to team` in the box and click **Commit**.
 5. Click **Sync Changes** to push your commit to GitHub.
