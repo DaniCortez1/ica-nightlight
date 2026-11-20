@@ -13,8 +13,6 @@ By the end your team will have a NightLight sketch edited by every teammate, eig
 - **Developer B**: (LED) Tasks 2 and 6
 - **Developer C**: (Button) Tasks 3 and 7
 
-Teams of 3 have no Developer C: Developer B also takes Tasks 3 and 7, each on its own branch.
-
 ### Outline
 
 | | |
@@ -49,14 +47,13 @@ Goal: every teammate has the team's repository open in VS Code.
 
 **Developers**
 
-1. Accept the invitation from your PM. Look for the email from GitHub, or open the invitation link your PM can send you. Until you accept, you cannot push.
+1. Accept the invitation from your PM. Look for the email from GitHub, or open the invitation link your PM can send you. Until you accept, you cannot push changes.
 
 **Everyone**
 
 1. Open VS Code and press `Ctrl+Shift+P` (Mac: `Cmd+Shift+P`) to open the Command Palette.
-2. Type `Git: Clone` and press Enter. Paste your team's address and press Enter.
+2. Type `Git: Clone` and press Enter. Paste the URL to your team's repository and press Enter.
 3. Choose a folder on your computer, then click **Open** when VS Code offers. Click **Yes, I trust the authors** if asked.
-4. If a browser window asks you to sign in to GitHub, approve it and return to VS Code.
 
 **Check:** the Explorer on the left shows `README.md`, `INSTRUCTIONS.md`, `TASKS.md` and a `NightLight` folder, and the bottom-left corner of VS Code shows `main`.
 
@@ -83,15 +80,15 @@ Goal: each of you changes your own files on your own branch, then asks the PM to
 
 1. **Start current.** Make sure the bottom-left corner shows `main`. In Source Control, click `...` then **Pull**.
 2. **Create your branch.** Click `main` in the bottom-left corner, choose **Create new branch...**, type the branch name from your task and press Enter. The corner now shows your branch name.
-3. **Do the task** by following the goal and hints in `TASKS.md`. Press `Ctrl+S` in each file.
-4. **Commit.** In Source Control, click each changed file to review the green and red differences. Click `+` beside **Changes** to stage everything, type a short commit message (your task suggests one) and click **Commit**.
-5. **Publish.** Click **Publish Branch** where the Commit button was. Approve the GitHub sign-in if asked.
+3. **Do the task** by following the goal and hints in `TASKS.md`. Save your work.
+4. **Commit.** In Source Control, click each changed file to review the green and red differences. Click `+` beside **Changes** to stage everything, type a short commit message and click **Commit**.
+5. **Publish.** Click **Publish Branch** where the Commit button was.
 6. **Open the pull request.** Go to your team's repository on github.com. A yellow banner says your branch had recent pushes. Click **Compare & pull request**.
 7. **Check the base repository.** At the top of the page, `base repository` must be your team's fork (the PM's username) and `base` must be `main`. If it shows the instructor's repository, click it and choose your team's fork.
 8. Use your commit message as the title, add one sentence describing the change, and click **Create pull request**.
 9. **Do not merge it.** The PM merges in Activity 4. While you wait, open a teammate's pull request, click **Files changed** and read their code.
 
-Teams of 3: Developer B publishes Task 2, then clicks the branch name in the bottom-left corner, switches back to `main`, and repeats steps 2 to 8 for Task 3.
+Teams of 3: Assign a team member to complete Task 3.
 
 ## Activity 4: Review, merge and pull
 
@@ -120,7 +117,7 @@ Goal: build the finished features, and resolve the conflict that happens when tw
 **Part A: your branch and pull request**
 
 1. Confirm you are on `main` with the latest code (Activity 4, steps 1 and 2).
-2. Repeat Activity 3, steps 2 to 8, using your Round 2 task. Developers B and C: your tasks edit files that a teammate wrote in Round 1.
+2. Complete your Round 2 task, following the same process as in Round 1. Developers B and C: your tasks edit files that a teammate wrote in Round 1.
 
 **Part B: the PM merges, in this order**
 
