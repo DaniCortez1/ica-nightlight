@@ -35,8 +35,8 @@ root/
 ├── .gitignore               # Git files and folders to ignore
 ├── .gitattributes           # Special instructions for Git
 ├── README.md                # Project overview (this file)
-	├── INSTRUCTIONS.md          # What to do and when
-	├── TASKS.md                 # What each person builds
+├── INSTRUCTIONS.md          # What to do and when
+├── TASKS.md                 # What each person builds
 └── NightLight/
 	├── NightLight.ino       # Main sketch file: setup, loop, and the three modes
 	├── config.h             # Pins and settings shared by every file
