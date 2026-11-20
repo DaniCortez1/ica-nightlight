@@ -24,7 +24,7 @@ Branch: `task1-sensor`.
 **Hints:**
 
 - Taking several readings and averaging them is the usual approach.
-- Keep the number of readings in a setting in `config.h` instead of typing it into the function. Pick a name such as `SENSOR_SAMPLES`.
+- Keep the number of readings in a constant in `config.h` instead of typing it into the function. Declare it as `const int`, with a name such as `SENSOR_SAMPLES`.
 - `analogRead(LIGHT_SENSOR_PIN)` takes one reading.
 - A total of many readings can be too big for an `int`. Think about which type to use for the total.
 
@@ -40,7 +40,7 @@ Branch: `task2-led`.
 
 - `ledBrightness` holds the current brightness. `setLed(value)` changes it and updates the pin.
 - Step up when the brightness is below the target, step down when it is above, and do nothing when it is equal. Never step past the target.
-- Keep the step size in a setting such as `FADE_STEP`.
+- Keep the step size in a `const int` such as `FADE_STEP`.
 - `min()` and `max()` help you avoid overshooting.
 
 ### Task 3: Debounce the button
@@ -56,7 +56,7 @@ Branch: `task3-button`.
 - The button uses the built-in pull-up resistor, so the pin reads `LOW` while the button is pressed and `HIGH` when it is not.
 - You need to remember the previous state between calls. A `static` variable inside the function keeps its value.
 - Look for the moment the state changes from `HIGH` to `LOW`, not for the state itself.
-- `millis()` gives the time in milliseconds. Ignore changes that come too soon after the last one, within a few tens of milliseconds. Keep that time in a setting such as `BUTTON_DEBOUNCE_MS`.
+- `millis()` gives the time in milliseconds. Ignore changes that come too soon after the last one, within a few tens of milliseconds. Keep that time in a constant such as `BUTTON_DEBOUNCE_MS`. Times from `millis()` are `unsigned long`, so declare it as `const unsigned long`.
 
 ### Task 4: Tidy the status line
 
@@ -70,7 +70,7 @@ Branch: `task4-logger`.
 
 - `Serial.print()` writes without ending the line, and `Serial.println()` ends it.
 - `currentMode` and `ledBrightness` are global variables you can use directly.
-- To print only twice a second, remember when you last printed (a `static` variable works) and compare with `millis()`. Keep the interval in a setting such as `LOG_INTERVAL_MS`.
+- To print only twice a second, remember when you last printed (a `static` variable works) and compare with `millis()`. Keep the interval in a constant such as `LOG_INTERVAL_MS`, declared as `const unsigned long`.
 - `modeName()` can use a `switch` on `MODE_OFF`, `MODE_AUTO` and `MODE_ON`. Its return type is `const char*`.
 
 ## Round 2 (Activity 5)

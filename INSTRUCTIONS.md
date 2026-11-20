@@ -131,7 +131,7 @@ The conflict is on purpose: Developer A's Task 5 and Developer B's Task 6 each c
 1. Check that the bottom-left corner shows `task6-banner`.
 2. In Source Control, click `...` then **Fetch**. Then click `...`, choose **Branch**, then **Merge Branch...**, and pick `origin/main`.
 3. VS Code reports a conflict. `config.h` appears under **Merge Changes**. Click it, then click **Resolve in Merge Editor**.
-4. Left is **Incoming** (the PM's `main`, value 300), right is **Current** (your branch, value 400), and the **Result** is at the bottom. Agree with Developer A on 350. In the Result pane, edit the line to read `#define DARK_THRESHOLD    350`, keeping the comment after it.
+4. Left is **Incoming** (the PM's `main`, value 300), right is **Current** (your branch, value 400), and the **Result** is at the bottom. Agree with Developer A on 350. In the Result pane, edit the line to read `const int DARK_THRESHOLD = 350;`, keeping the comment after it.
 5. Click **Complete Merge**. Confirm that no `<<<<<<<` or `>>>>>>>` lines remain in the file.
 6. In Source Control, click **Commit** (the message is already filled in), then **Sync Changes**.
 7. Return to your pull request on github.com. The conflict warning is gone. Tell the PM.
