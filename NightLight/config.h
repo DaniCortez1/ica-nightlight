@@ -21,13 +21,14 @@ enum Mode { MODE_OFF, MODE_AUTO, MODE_ON };
 
 // ---------- LED settings (Task 2, Developer B) ----------
 // TODO Task 2: add any settings you need here (for example: const int FADE_STEP = 5;)
+const int FADE_STEP = 5;
 
 // ---------- Button settings (Task 3, Developer C) ----------
 // TODO Task 3: add any settings you need here (for example: const unsigned long BUTTON_DEBOUNCE_MS = 40;)
 
 // ---------- Logger settings (Task 4, Project Manager) ----------
 // TODO Task 4: add any settings you need here (for example: const unsigned long LOG_INTERVAL_MS = 500;)
-
+const unsigned long LOG_INTERVAL_MS = 500;
 // ---------- Night light behavior (shared by everyone) ----------
 const int DARK_THRESHOLD    = 500;  // light readings below this mean "dark"
 const int NIGHT_BRIGHTNESS = 120;  // LED brightness (0-255) when it is dark
