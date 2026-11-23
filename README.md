@@ -16,7 +16,7 @@ A small Arduino night light that your team builds together while practicing Git 
 
 **Developer A (Sensor):** Diandra Rodriguez (Diandra525)
 
-**Developer B (LED):** Your Name (your GitHub username)
+**Developer B (LED):** Dani Cortez (DaniCortez1)
 
 **Developer C (Button):** Your Name (your GitHub username)
 
