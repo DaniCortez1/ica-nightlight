@@ -19,6 +19,7 @@ void logStatus(int light) {
     Serial.println(modeName(mode));
   }
   Serial.println(light);
-}
+} 
 
 // TODO Task 6 (Developer B): add logBanner() below this line.
+// Edited
